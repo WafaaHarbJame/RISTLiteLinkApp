@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.RISTLiteLink" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--        <item name="android:buttonBarPositiveButtonStyle" tools:targetApi="lollipop">@color/colorPrimary</item>-->
+        <!--        <item name="android:buttonBarNegativeButtonStyle" tools:targetApi="lollipop">@color/colorPrimary</item>-->
+        <item name="android:buttonBarPositiveButtonStyle" tools:targetApi="lollipop">
+            @style/DatePickerButtonStyle
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle" tools:targetApi="lollipop">
+            @style/DatePickerButtonStyle
+        </item>
+    </style>
+
+    <style name="DatePickerButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+</resources>
